@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  root "departments#index"
+  root "main#index"
+  get 'main/index'
+  devise_for :users
+  
   
   resources :departments
 
